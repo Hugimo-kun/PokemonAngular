@@ -1,0 +1,9 @@
+<section>
+  <h1 class="text-center mb-5">Acceuil</h1>
+  <app-carousel class="border border-1 rounded"></app-carousel>
+  <div class="d-flex justify-content-around my-5">
+    @for (pokemon of pokemons; track pokemon.pokedex_id) {
+    <app-card [onePokemon]="pokemon"></app-card>
+    }
+  </div>
+</section>

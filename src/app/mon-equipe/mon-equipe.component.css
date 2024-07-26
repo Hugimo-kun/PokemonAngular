@@ -1,0 +1,13 @@
+.visible {
+  background-color: rgb(238, 238, 26);
+  display: block;
+  border-radius: 15px;
+}
+
+.invisible {
+  display: none;
+}
+
+.types {
+  width: 30px;
+}
