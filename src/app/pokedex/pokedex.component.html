@@ -15,10 +15,15 @@
 
         <p>ID: {{ pokemon.pokedex_id }}</p>
         <p>Type(s):</p>
-        @for (type of pokemon?.types; track type.name) {
-        <img [src]="type.image" alt="{{ type.name }}" class="w-25" />
-        <p>{{ type.name }}</p>
-        }
+        <div class="d-flex justify-content-around w-100">
+          @for (type of pokemon?.types; track type.name) {
+          <div class="d-flex flex-column align-items-center">
+            <img [src]="type.image" alt="{{ type.name }}" class="w-100" />
+            <p>{{ type.name }}</p>
+          </div>
+
+          }
+        </div>
       </div>
     </div>
   </div>

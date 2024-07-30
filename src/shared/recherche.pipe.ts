@@ -7,7 +7,8 @@ import {Pipe, PipeTransform} from "@angular/core";
 export class RecherchePipe implements PipeTransform {
   transform(pokemons: any[], searchText: string): any[] {
     if (!pokemons || !searchText) {
-      return [];
+      const pikachu = pokemons.find((pokemon) => pokemon.name.fr === "Pikachu");
+      return pikachu ? [pikachu] : [];
     }
 
     searchText = searchText.toLowerCase();
