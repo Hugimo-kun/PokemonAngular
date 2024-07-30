@@ -1,12 +1,13 @@
-import { HttpClient, HttpParams } from '@angular/common/http';
-import { Injectable } from '@angular/core';
-import { IPokemon } from './ipokemon';
+import {HttpClient, HttpParams} from "@angular/common/http";
+import {Injectable} from "@angular/core";
+import {IPokemon} from "./ipokemon";
+import {environment} from "../environments/environment";
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: "root",
 })
 export class PokemonService {
-  url = 'https://tyradex.tech/api/v1/pokemon';
+  url = environment.apiURL;
 
   constructor(private http: HttpClient) {}
 

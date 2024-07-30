@@ -1,0 +1,25 @@
+<section class="d-flex flex-column align-items-center">
+  <h1 class="text-center">Pokedex</h1>
+  <input type="text" class="w-25 h-100" [(ngModel)]="searchText" />
+  <div
+    *ngFor="let pokemon of pokemons | recherche : searchText; let i = index"
+    class="d-flex justify-content-center"
+  >
+    <div id="pokedex" class="w-50 h-50 d-flex flex-column align-items-center">
+      <div id="imagePokedex">
+        <img [src]="pokemon.sprites.regular" alt="{{ pokemon.name.fr }}" />
+      </div>
+      <div id="details" class="d-flex flex-column align-items-center">
+        <h2>Nom: {{ pokemon.name.fr }}</h2>
+        <h3>{{ pokemon.name.jp }}</h3>
+
+        <p>ID: {{ pokemon.pokedex_id }}</p>
+        <p>Type(s):</p>
+        @for (type of pokemon?.types; track type.name) {
+        <img [src]="type.image" alt="{{ type.name }}" class="w-25" />
+        <p>{{ type.name }}</p>
+        }
+      </div>
+    </div>
+  </div>
+</section>
