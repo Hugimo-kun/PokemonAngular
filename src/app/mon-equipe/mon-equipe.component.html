@@ -5,10 +5,15 @@
     <img
       src="https://www.cdiscount.com/pdt2/2/4/6/2/700x700/ban3701405800246/rw/sac-a-dos-du-dresseur-pokemon-bandai-sasha-b.jpg"
       alt="Sac à dos"
+      (click)="toggleDisplayTeam()"
     />
   </div>
   <div class="w-50 container">
-    <div *ngFor="let pokemon of mesPokemons; let i = index" class="d-flex">
+    <div
+      *ngFor="let pokemon of mesPokemons; let i = index"
+      [ngClass]="isVisible ? 'show' : 'invisible'"
+      class="d-flex"
+    >
       <img
         src="https://www.pokepedia.fr/images/e/e2/Pok%C3%A9_Ball-RS.png"
         alt="Pokeball"

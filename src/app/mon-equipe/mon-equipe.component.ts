@@ -17,6 +17,7 @@ export class MonEquipeComponent implements OnInit {
   index: number[] = [];
   status: boolean = false;
   visibleI: number | null = null;
+  isVisible: boolean = false;
 
   ngOnInit(): void {
     this.getMyTeam();
@@ -32,5 +33,13 @@ export class MonEquipeComponent implements OnInit {
 
   hideDescription() {
     this.visibleI = null;
+  }
+
+  toggleDisplayTeam() {
+    if (this.isVisible === false) {
+      this.isVisible = true;
+    } else {
+      this.isVisible = false;
+    }
   }
 }

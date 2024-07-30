@@ -11,3 +11,7 @@
 .types {
   width: 30px;
 }
+
+.show {
+  display: flex;
+}
