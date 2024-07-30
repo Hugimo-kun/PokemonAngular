@@ -5,6 +5,7 @@ import {PokemonDetailComponent} from "./pokemon-detail/pokemon-detail.component"
 import {Error404Component} from "./error404/error404.component";
 import {MonEquipeComponent} from "./mon-equipe/mon-equipe.component";
 import {PokedexComponent} from "./pokedex/pokedex.component";
+import {ChartComponent} from "./chart/chart.component";
 
 export const routes: Routes = [
   {path: "", component: HomeComponent},
@@ -12,5 +13,6 @@ export const routes: Routes = [
   {path: "pokemon/:id", component: PokemonDetailComponent},
   {path: "equipe", component: MonEquipeComponent},
   {path: "pokedex", component: PokedexComponent},
+  {path: "chart", component: ChartComponent},
   {path: "**", component: Error404Component},
 ];
