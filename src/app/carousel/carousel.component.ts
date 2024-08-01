@@ -1,15 +1,15 @@
-import { Component, inject, OnInit } from '@angular/core';
-import { CardComponent } from '../card/card.component';
-import { IPokemon } from '../../shared/ipokemon';
-import { PokemonService } from '../../shared/pokemon.service';
-import { CommonModule } from '@angular/common';
+import {Component, inject, OnInit} from "@angular/core";
+import {CardComponent} from "../card/card.component";
+import {IPokemon} from "../../shared/ipokemon";
+import {PokemonService} from "../../shared/pokemon.service";
+import {CommonModule} from "@angular/common";
 
 @Component({
-  selector: 'app-carousel',
+  selector: "app-carousel",
   standalone: true,
   imports: [CardComponent, CommonModule],
-  templateUrl: './carousel.component.html',
-  styleUrl: './carousel.component.css',
+  templateUrl: "./carousel.component.html",
+  styleUrl: "./carousel.component.css",
 })
 export class CarouselComponent implements OnInit {
   pokemons: IPokemon[] = [];
@@ -23,7 +23,7 @@ export class CarouselComponent implements OnInit {
 
   getPokemons() {
     this.service.fetchAll().subscribe((data: IPokemon[]) => {
-      this.pokemons = data;
+      this.pokemons = data.slice(1, this.pokemons.length - 1);
     });
   }
 

@@ -1,49 +1,49 @@
 {
-  "hash": "2e7b88b0",
+  "hash": "6dbbb292",
   "configHash": "55cd9df7",
-  "lockfileHash": "d0fce94a",
-  "browserHash": "ac132946",
+  "lockfileHash": "25b4d349",
+  "browserHash": "7aad88f7",
   "optimized": {
     "@angular/common": {
       "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
       "file": "@angular_common.js",
-      "fileHash": "1fb53bdd",
+      "fileHash": "ba42293c",
       "needsInterop": false
     },
     "@angular/common/http": {
       "src": "../../../../../node_modules/@angular/common/fesm2022/http.mjs",
       "file": "@angular_common_http.js",
-      "fileHash": "c83eb4cb",
+      "fileHash": "02f5e9ef",
       "needsInterop": false
     },
     "@angular/core": {
       "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "792ed4c6",
-      "needsInterop": false
-    },
-    "@angular/platform-browser": {
-      "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
-      "file": "@angular_platform-browser.js",
-      "fileHash": "a08661ff",
-      "needsInterop": false
-    },
-    "@angular/router": {
-      "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
-      "file": "@angular_router.js",
-      "fileHash": "9ced65d1",
+      "fileHash": "003fd0c0",
       "needsInterop": false
     },
     "@angular/forms": {
       "src": "../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
       "file": "@angular_forms.js",
-      "fileHash": "4de9c865",
+      "fileHash": "091a048d",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "871ed887",
+      "needsInterop": false
+    },
+    "@angular/router": {
+      "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
+      "file": "@angular_router.js",
+      "fileHash": "dedcf05d",
       "needsInterop": false
     },
     "ng2-charts": {
       "src": "../../../../../node_modules/ng2-charts/fesm2022/ng2-charts.mjs",
       "file": "ng2-charts.js",
-      "fileHash": "a98800be",
+      "fileHash": "7958acd4",
       "needsInterop": false
     }
   },
