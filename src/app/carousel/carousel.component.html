@@ -4,7 +4,7 @@
 >
   <button id="previous" (click)="prevPic()"><</button>
   <div id="card">
-    <img [src]="pokemons[i].sprites.regular" />
+    <img [src]="pokemons[i].sprites.regular" alt="{{ pokemons[i].name.fr }}" />
   </div>
   <button id="next" (click)="nextPic()">></button>
 </div>

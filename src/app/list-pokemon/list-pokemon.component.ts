@@ -24,7 +24,6 @@ export class ListPokemonComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    console.log(this.count);
     clearInterval(this.idInterval);
   }
 
