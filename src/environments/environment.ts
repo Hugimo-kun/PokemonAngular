@@ -1,3 +1,3 @@
 export const environment = {
-  apiURL: "https://tyradex.tech/api/v1/pokemon",
+  apiURL: "https://tyradex.vercel.app/api/v1/pokemon",
 };
